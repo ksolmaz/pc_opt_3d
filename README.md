@@ -22,3 +22,4 @@
     ref_img = img_for_loss(ref_img)
 
 
+Python 3.7.12
