@@ -21,17 +21,11 @@
     img_for_loss() = hedef görselin path'i ile onu transforma uygun hale getirip o görseli döndürüyor.
     ref_img = img_for_loss(ref_img)
 
-
+    Requirements
     Python 3.7.12
-
     pytorch3d==0.6.1
-
     torch==1.10.0+cu111
-
     numpy==1.21.5
-
     open3d==0.15.2
-
     opencv-python==4.1.2.30
-
     imagecodecs==2022.2.22
