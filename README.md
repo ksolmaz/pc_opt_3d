@@ -22,6 +22,7 @@
     ref_img = img_for_loss(ref_img)
 
 <h3 align="center">Requirements</h3> 
+
     Python 3.7.12
     pytorch3d==0.6.1
     torch==1.10.0+cu111
