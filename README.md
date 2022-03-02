@@ -21,7 +21,7 @@
     img_for_loss() = hedef görselin path'i ile onu transforma uygun hale getirip o görseli döndürüyor.
     ref_img = img_for_loss(ref_img)
 
-    <b>Requirements</b>
+    <h3 align="center">Requirements</h3> 
     Python 3.7.12
     pytorch3d==0.6.1
     torch==1.10.0+cu111
