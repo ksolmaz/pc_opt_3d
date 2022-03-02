@@ -20,3 +20,9 @@ img_for_loss() = hedef görselin path'i ile onu transforma uygun hale getirip o 
 ref_img = img_for_loss(ref_img)
 
 
+Code Blocks (Preformatted text):
+
+    | First Header  | Second Header |
+    | ------------- | ------------- |
+    | Content Cell  | Content Cell  |
+    | Content Cell  | Content Cell  |
