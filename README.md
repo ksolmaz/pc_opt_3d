@@ -4,7 +4,7 @@
     verts,rgb = pc_extract(img_color,img_depth)
 
 
-    six_param_opt() = parametreleri optimizasyona hazılıyarak point cloud çıktısı veriyor.
+    six_param_opt() = parametreleri optimizasyona hazırlayarak point cloud çıktısı veriyor.
     point_cloud = six_param_opt(x,new_world_coor,rgb)
 
 
