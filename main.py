@@ -6,16 +6,16 @@ import numpy as np
 from pytorch3d.transforms import matrix_to_quaternion,quaternion_to_matrix
 from pytorch3d.structures import Pointclouds
 
-deneme_color = "/content/drive/MyDrive/dosya/frame-000000.color.png"
-deneme_depth = '/content/drive/MyDrive/dosya/seq01_frame-000000.pose.depth.tiff'
-deneme_ref = "/content/drive/MyDrive/dosya/frame-000000.color.png"
+img_color = "frame-000000.color.png"
+img_depth = 'frame-000000.pose.depth.tiff'
+ref_img   = "frame-000050.color.png"
 
-verts,rgb = pc_extract(deneme_color,deneme_depth)
-world_coor = world_coor(deneme_color,deneme_depth)
-ref_img = img_for_loss(deneme_ref)
+verts,rgb = pc_extract(img_color,img_depth)
+new_world_coor = world_coor(img_color,img_depth)
+ref_img = img_for_loss(ref_img)
 
-def deneme(x):
-        point_cloud = six_param_opt(x,world_coor,rgb)
+def de_optim(x):
+        point_cloud = six_param_opt(x,new_world_coor,rgb)
         images = render_settings(point_cloud)
         no_zero_points = images[0, ..., :3].float().detach().squeeze().cpu().numpy() != 0
         zeros_np = images[0, ..., :3].float().detach().cpu().numpy()
@@ -30,8 +30,8 @@ def deneme(x):
           input = torch.ones(480,640,3).cuda()
           target = torch.zeros(480,640,3).cuda()
           colored_points_val = 921600
-          loss = torch.sum((input - target) ** 2)/colored_points_val
-          
+          loss = torch.sum((input - target) ** 2)/colored_points_val 
+                
         return loss.detach().cpu().numpy()
 
 bounds = [(-1,1),(-1,1),(-1,1),(-1.3,1.3),(-1.3,1.3),(-1.3,1.3)]            
@@ -40,4 +40,4 @@ mutate = 0.4
 recombination = 1                
 maxiter = 20 
 
-de_simple.minimize(deneme, bounds, popsize, mutate, recombination, maxiter)
+de_simple.minimize(de_optim, bounds, popsize, mutate, recombination, maxiter)
