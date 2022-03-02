@@ -24,9 +24,10 @@
 <h3 align="center">Requirements</h3> 
 
     Python 3.7.12
-    pytorch3d==0.6.1
-    torch==1.10.0+cu111
-    numpy==1.21.5
-    open3d==0.15.2
+    pytorch3d==0.6.1            pip install pytorch3d -f https://dl.fbaipublicfiles.com/pytorch3d/packaging/wheels/py37_cu111_pyt1100/download.html
+    torch==1.10.0+cu111         pip install torch==1.10.0+cu111
+    open3d==0.15.2              pip install open3d
+    imagecodecs==2022.2.22      pip install imagecodecs
+    differentiable_evo          pip install git+https://github.com/nathanrooy/differential-evolution-optimization
     opencv-python==4.1.2.30
-    imagecodecs==2022.2.22
+    numpy==1.21.5
