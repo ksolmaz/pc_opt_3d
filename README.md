@@ -20,3 +20,6 @@ new_world_coor = world_coor(img_color,img_depth)
 img_for_loss() = hedef görselin path'i ile onu transforma uygun hale getirip o görseli döndürüyor.
 ref_img = img_for_loss(ref_img)
 
+<h1 align="center">For simple run, change paths and run main.py or run demo.ipynb</h1>
+<h3 align="center">For simple run, change paths and run main.py or run demo.ipynb</h3>
+
