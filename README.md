@@ -1,5 +1,4 @@
-For simple run, change paths and run main.py or run demo.ipynb
-
+<h3 align="center">For simple run, change paths and run main.py or run demo.ipynb</h3>
 
 pc_extract() = RGB path ve DEPTH path alıp point cloud noktalarını ve noktaların rengini döndürüyor.
 verts,rgb = pc_extract(img_color,img_depth)
@@ -19,7 +18,16 @@ new_world_coor = world_coor(img_color,img_depth)
 
 img_for_loss() = hedef görselin path'i ile onu transforma uygun hale getirip o görseli döndürüyor.
 ref_img = img_for_loss(ref_img)
-
-<h1 align="center">For simple run, change paths and run main.py or run demo.ipynb</h1>
-<h3 align="center">For simple run, change paths and run main.py or run demo.ipynb</h3>
+#pc_extract
+#H2 header
+#H3 header
+#H4 header
+#H5 header
+#H6 header
+#Heading 1 link [Heading link](https://github.com/ksolmaz/pc_opt_3d/blob/86fd997a1cedc617818ab625df716e50b5901947/point_cloud/pc_extract.py "Heading link")
+##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
+#####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+######Heading 6 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 
