@@ -12,7 +12,9 @@
     images = render_settings(point_cloud)
 
 
-    world_coor() = RGB path ve DEPTH path alıp point cloud noktalarını ve noktaların rengini birim matris ile dünya kordinatlarında döndürüyor değiştirmek için içerisindeki birim matris yerine sahnenin kendi pozunu vermemiz gerekiyor.
+    world_coor() = RGB path ve DEPTH path alıp point cloud noktalarını ve noktaların rengini 
+    birim matris ile dünya kordinatlarında döndürüyor değiştirmek için içerisindeki birim matris
+    yerine sahnenin kendi pozunu vermemiz gerekiyor.
     new_world_coor = world_coor(img_color,img_depth)
 
 
