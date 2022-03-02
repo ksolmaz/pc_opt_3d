@@ -6,9 +6,9 @@ import numpy as np
 from pytorch3d.transforms import matrix_to_quaternion,quaternion_to_matrix
 from pytorch3d.structures import Pointclouds
 
-img_color = "frame-000000.color.png"
-img_depth = 'frame-000000.pose.depth.tiff'
-ref_img   = "frame-000050.color.png"
+img_color = "/other_files/frame-000000.color.png"
+img_depth = '/other_files/frame-000000_depth.tiff'
+ref_img   = "/other_files/frame-000150.color.png"
 
 verts,rgb = pc_extract(img_color,img_depth)
 new_world_coor = world_coor(img_color,img_depth)
