@@ -20,8 +20,3 @@
     ref_img = img_for_loss(ref_img)
 
 
-
-
-    aaaaa
-    asdasd
-    asdasda
