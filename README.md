@@ -21,9 +21,13 @@
     img_for_loss() = hedef görselin path'i ile onu transforma uygun hale getirip o görseli döndürüyor.
     ref_img = img_for_loss(ref_img)
 
-    Kamera koordinatlarıdna bulunan noktalar dünya koordinatlarına,Sahnenin RT(projeksiyon) matrisi ile noktaların homogeneous halinin transpose'u ile çarpılarak bulunuyor. Eğer birim matris ile dünya koordinat sistemine geçmek için RT yerine 4x4 bir birim matrisle çarpıyoruz.
+    Kamera koordinatlarıdna bulunan noktalar dünya koordinatlarına,Sahnenin RT(projeksiyon) matrisi ile noktaların
+    homogeneous halinin transpose'u ile çarpılarak bulunuyor. Eğer birim matris ile dünya koordinat sistemine geçmek
+    için RT yerine 4x4 bir birim matrisle çarpıyoruz.
     
-    Dünya koordinatlarıdnan kamera koordinatlarına geçerken,döndüreceğimiz açının R matrisinin transpose'u ile dünya koordinatlarıdnaki noktaları çarpıyoruz ve döndürdüğümüz RT'nin C'sini bu çarpımdan çıkarıyoruz. "torch.matmul(R_transpose,new_world) -C"
+    Dünya koordinatlarıdnan kamera koordinatlarına geçerken,döndüreceğimiz açının R matrisinin transpose'u ile dünya
+    koordinatlarıdnaki noktaları çarpıyoruz ve döndürdüğümüz RT'nin C'sini bu çarpımdan çıkarıyoruz. 
+    "torch.matmul(R_transpose,new_world) -C"
     
     
 <h3 align="center">Requirements</h3> 
